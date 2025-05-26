@@ -25,7 +25,7 @@ const UpdateBooks = () => {
   const headers = {
     id: localStorage.getItem("id"),
     authorization: `Bearer ${localStorage.getItem("token")}`,
-    boolkid: id,
+    bookid: id,
   };
 
   const submit = async () => {
@@ -71,18 +71,18 @@ const UpdateBooks = () => {
   }, [id]);
 
   return (
-    <div className="bg-zinc-900 h-[100%] p-0 md:p-4">
-      <h1 className="text-3xl md:text-5xl fonr-semibold text-zinc-500 mb-8">
+    <div className="bg-[#0A1828] h-[100%] p-0 md:p-4">
+      <h1 className="text-3xl text-white md:text-5xl fonr-semibold text-gold mb-8">
         Update Book Details
       </h1>
-      <div className="p-4 bg-zinc-800 rounded">
+      <div className="p-4 bg-[#0A1828] rounded">
         <div>
           <label htmlFor="" className="text-zinc-400"> 
             Image
           </label>
           <input
             type='text'
-            className='w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none'
+            className='w-full mt-2 white text-black p-2 outline-none'
             placeholder="url of image"
             name="url"
             required
@@ -91,12 +91,12 @@ const UpdateBooks = () => {
           />
         </div>
         <div className="mt-4">
-          <label htmlFor="" className="text-zinc-400">
+          <label htmlFor="" className="text-white">
             Title of Book
           </label>
           <input
             type="text"
-            className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+            className="w-full mt-2 bg-white text-black p-2 outline-none"
             placeholder="title of book"
             name="title"
             value={Data.title}
@@ -104,12 +104,12 @@ const UpdateBooks = () => {
           />
         </div>
         <div className="mt-4">
-          <label htmlFor="" className="text-zinc-400">
+          <label htmlFor="" className="text-white">
             Name of Authors
           </label>
           <input
             type="text"
-            className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+            className="w-full mt-2 bg-white text-black p-2 outline-none"
             placeholder="title of author"
             name="author"
             value={Data.author}
@@ -122,7 +122,7 @@ const UpdateBooks = () => {
           </label>
           <input
             type="number"
-            className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+            className="w-full mt-2 bg-white text-black p-2 outline-none"
             placeholder="price of Book"
             name="price"
             required
@@ -135,7 +135,7 @@ const UpdateBooks = () => {
             Description 
           </label>
           <textarea
-            className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+            className="w-full mt-2 bg-white text-black p-2 outline-none"
             rows="5"
             placeholder="Description of Services"
             name="desc"
@@ -150,7 +150,7 @@ const UpdateBooks = () => {
           </label>
           <input
             type="text"
-            className="w-full mt-2 bg-zinc-900 text-zinc-100 p-2 outline-none"
+            className="w-full mt-2 bg-white text-black p-2 outline-none"
             placeholder="language of Book"
             name="language"
             required

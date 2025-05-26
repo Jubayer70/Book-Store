@@ -45,7 +45,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-[#0A1828] px-4 py-8 flex items-center justify-center">
-      <div className="bg-[#178582] rounded-lg px-8 py-5 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/4">
+      <div className="bg-[#0A1828] rounded-lg px-8 py-5 w-full sm:w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/4 border-2 border-[#FFD700]">
         <p className="text-[#FFD700] text-xl">Sign In</p>
         <div className="mt-4">
           <label htmlFor="username" className="text-[#FFD700]">
@@ -53,7 +53,7 @@ const Login = () => {
           </label>
           <input
             type="text"
-            className="w-full mt-2 bg-white text-zinc-800 p-2 outline-none"
+            className="w-full mt-2 bg-white text-[#FFD700] p-2 outline-none border border-[#FFD700]"
             placeholder="username"
             name="username"
             required
@@ -68,7 +68,7 @@ const Login = () => {
           </label>
           <input
             type="password"
-            className="w-full mt-2 bg-white text-zinc-800 p-2 outline-none"
+            className="w-full mt-2 bg-white text-[#FFD700] p-2 outline-none border border-[#FFD700]"
             placeholder="password"
             name="password"
             required
@@ -77,14 +77,14 @@ const Login = () => {
           />
         </div>
         <div className="mt-4">
-          <button className="w-full bg-red-500 text-[#FFD700] font-semibold py-2 rounded hover:text-red-500" onClick={submit}>
+          <button className="w-full bg-red-500 text-[#FFD700] font-semibold py-2 rounded hover:text-red-500 border border-[#FFD700]">
             Log In
           </button>
         </div>
         <p className="flex mt-4 items-center justify-center text-[#FFD700] font-semibold"> Or </p>
         <p className="flex mt-4 items-center justify-center text-[#FFD700] font-semibold">
           Don't have an account? &nbsp;
-          <Link to="/signup" className="hover:text-blue-500">
+          <Link to="/signup" className="hover:text-blue-500 text-[#FFD700]">
             <u>Sign Up</u>
           </Link>
         </p>

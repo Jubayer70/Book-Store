@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../../../src/naion.png'
+import logo from '../../../src/naion1.png'
 import { Link } from 'react-router-dom';
 import { FaGripLines } from "react-icons/fa";
 import { useSelector } from 'react-redux';
@@ -57,7 +57,7 @@ const Navbar = () => {
             <img className='h-10 mr-4' src={logo} alt='logo'/>
           </Link>
           <Link to ="/">
-              <h1 className="text-2xl font-semibold">Book Store</h1>
+              <h1 className="text-2xl font-semibold">QuickCart</h1>
           </Link>
         </div>
         <div className="navlinks block md:flex items-center gap-4">
