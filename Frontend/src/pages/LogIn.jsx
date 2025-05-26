@@ -53,7 +53,7 @@ const Login = () => {
           </label>
           <input
             type="text"
-            className="w-full mt-2 bg-white text-[#FFD700] p-2 outline-none border border-[#FFD700]"
+            className="w-full mt-2 bg-white text-black p-2 outline-none border border-[#FFD700]"
             placeholder="username"
             name="username"
             required
@@ -68,7 +68,7 @@ const Login = () => {
           </label>
           <input
             type="password"
-            className="w-full mt-2 bg-white text-[#FFD700] p-2 outline-none border border-[#FFD700]"
+            className="w-full mt-2 bg-white text-black p-2 outline-none border border-[#FFD700]"
             placeholder="password"
             name="password"
             required
@@ -77,7 +77,7 @@ const Login = () => {
           />
         </div>
         <div className="mt-4">
-          <button className="w-full bg-red-500 text-[#FFD700] font-semibold py-2 rounded hover:text-red-500 border border-[#FFD700]">
+          <button className="w-full bg-red-500 text-[#FFD700] font-semibold py-2 rounded hover:text-blue-700 border border-[#FFD700]">
             Log In
           </button>
         </div>

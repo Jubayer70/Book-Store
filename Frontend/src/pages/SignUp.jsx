@@ -119,7 +119,7 @@ const Signup = () => {
         <p className="flex mt-4 items-center justify-center text-[#FFD700] font-semibold">
           Already have an account? &nbsp;  
           <Link to="/login" className="hover:text-blue-500">
-            <u>LogIn</u>
+            <u>Log_In</u>
           </Link>
         </p>
       </div>
