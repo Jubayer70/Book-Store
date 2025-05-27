@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import axios from 'axios';
 
@@ -111,7 +111,10 @@ const Signup = () => {
           />
         </div>
         <div className="mt-4">
-          <button className="w-full bg-[#FFD700] text-[#0A1828] font-semibold py-2 rounded hover:bg-[#e6c200] border border-[#FFD700]">
+          <button 
+            onClick={submit}
+            className="w-full bg-[#FFD700] text-[#0A1828] font-semibold py-2 rounded hover:bg-[#e6c200] border border-[#FFD700]"
+          >
             SignUP
           </button>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import { authActions } from '../store/auth';
 import { useDispatch } from 'react-redux';
@@ -77,7 +77,10 @@ const Login = () => {
           />
         </div>
         <div className="mt-4">
-          <button className="w-full bg-red-500 text-[#FFD700] font-semibold py-2 rounded hover:text-blue-700 border border-[#FFD700]">
+          <button 
+            onClick={submit} 
+            className="w-full bg-red-500 text-[#FFD700] font-semibold py-2 rounded hover:text-blue-700 border border-[#FFD700]"
+          >
             Log In
           </button>
         </div>
